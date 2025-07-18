@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url("font/HankenGrotesk-VariableFont_wght.ttf"); 
+}
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    
+}
+main {
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+main > div {
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "primeiro" "segundo";
+    height: 50%;
+    width: 25%;
+    padding-top: 15px;
+    
+}
+#item1{grid-area: primeiro;}
+#item2{grid-area: segundo;}
+
+#item1 {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 15px;
+}
+#resultado {
+    border: 1px solid red;
+    padding: 20px;
+    background-color: hsla(256, 72%, 46%, 1);
+}
