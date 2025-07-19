@@ -9,6 +9,7 @@
 }
 body {
     font-family: 'Hanken Grotesk', sans-serif;
+    background: hsl(221, 100%, 96%);
     
 }
 main {
@@ -20,6 +21,7 @@ main {
 }
 main > div {
     border: 1px solid red;
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
@@ -29,17 +31,41 @@ main > div {
     padding-top: 15px;
     
 }
+
 #item1{grid-area: primeiro;}
 #item2{grid-area: segundo;}
 
 #item1 {
+    background: hsl(252, 100%, 67%);
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     gap: 15px;
+    color: hsl(0, 0%, 100%);
 }
 #resultado {
-    border: 1px solid red;
-    padding: 20px;
+    width: 40%;
+    padding: 30px;
+    border-radius: 100%;
     background-color: hsla(256, 72%, 46%, 1);
+    text-align: center;
+}
+#medida-resultado {
+    font-size: 3em;
+}
+#porcetagem {
+    color: rgba(255, 255, 255, 0.425);
+}
+#mensagem-final {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 0;
+}
+#frase-resultado {
+   
+    text-align: center;
+    padding: 10px 80px;
+    font-size: 0.9em;
+
 }
